@@ -5,12 +5,12 @@ const router = express.Router();
 
 //endpoints
 router.get('/', (req, res) => {
-    res.send(`GET /clients endpoint`);
+    res.send(`GET /actions endpoint`);
 })
 
 router.get('/:id', (req, res) => {
-    res.send(`GET /clients/${req.params.id}`);
+    res.send(`GET /actions/${req.params.id}`);
 })
-// /:id is same as /products/:id
+// /:id is same as /actions/:id
 
 module.exports = router;

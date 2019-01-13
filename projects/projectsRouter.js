@@ -6,12 +6,12 @@ router.use(express.json());
 
 //endpoints
 router.get('/', (req, res) => {
-    res.send(`GET /products endpoint`);
+    res.send(`GET /projects endpoint`);
 })
 
 router.get('/:id', (req, res) => {
-    res.send(`GET /products/${req.params.id}`);
+    res.send(`GET /projects/${req.params.id}`);
 })
-// /:id is same as /products/:id
+// /:id is same as /projects/:id
 
 module.exports = router;
