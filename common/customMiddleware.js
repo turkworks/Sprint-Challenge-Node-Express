@@ -1,4 +1,4 @@
-function doubler(req, res, next) {
+function custom(req, res, next) {
     const value = req.query.number || 0;
 
     if(value) {
@@ -10,4 +10,4 @@ function doubler(req, res, next) {
     
 }
 
-module.exports = doubler;
+module.exports = custom;
