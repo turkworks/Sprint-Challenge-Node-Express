@@ -67,10 +67,10 @@ router.put('/:id', (req, res) => {
     }).catch(err => res.status(500).json(err))
 });
 
-router.get('/users/:id', (req, res) => {
+router.get('/users/actions/:id', (req, res) => {
     const id = req.params.id;
 
-    projects.getProjectActions(actions)
+    projects.getProjectActions(id)
         .then(user=> {
             if(user) {
                 res.status(200).json({user});
